@@ -1,1 +1,1 @@
-from .bouquets import bouquet_list
+from .bouquets import bouquet_list, bouquet_form

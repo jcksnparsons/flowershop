@@ -1,5 +1,5 @@
 import sqlite3
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse
 from bouquetapp.models import Bouquet
 from ..connection import Connection
 
@@ -35,4 +35,21 @@ def bouquet_list(request):
         }
 
         return render(request, template, context)
+
+    elif request.method == 'POST':
+        form_data = request.POST
+
+        with sqlite3.connect(Connection.db_path) as conn:
+            db_cursor = conn.cursor()
+
+            db_cursor.execute("""
+            INSERT INTO bouquetapp_bouquet
+            (
+                name, occasion
+            )
+            VALUES (?,?)
+            """,
+            (form_data["name"], form_data["occasion"]))
+
+        return redirect(reverse('bouquetapp:home'))
                 

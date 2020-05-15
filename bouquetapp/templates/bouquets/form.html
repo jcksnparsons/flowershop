@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Flower Shop</title>
+    </head>
+    <body>
+        <h1>New Bouquet</h1>
+
+        <form action="{% url 'bouquetapp:home' %}" method="POST">
+        {% csrf_token %}
+            <fieldset>
+                <label for="name">Name: </label>
+                <input id="name" type="text" name="name">
+            </fieldset>
+            <fieldset>
+                <label for="occasion">Occasion: </label>
+                <input id="occasion" type="text" name="occasion">
+            </fieldset>
+
+            <input type="submit" value="Add Bouquet" />
+        </form>
+    </body>
+</html>
