@@ -3,4 +3,6 @@ from .views import *
 
 app_name = "bouquetapp"
 
-urlpatterns = []
+urlpatterns = [
+    path('', bouquet_list, name="home")
+]
