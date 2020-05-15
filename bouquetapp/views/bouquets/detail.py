@@ -35,8 +35,8 @@ def get_bouquet(bouquet_id):
             f.name AS flower_name,
             bf.quantity
         FROM bouquetapp_bouquet b
-        JOIN bouquetapp_bouquetflower bf ON b.id = bf.bouquet_id
-        JOIN bouquetapp_flower f ON f.id = bf.flower_id
+        LEFT JOIN bouquetapp_bouquetflower bf ON b.id = bf.bouquet_id
+        LEFT JOIN bouquetapp_flower f ON f.id = bf.flower_id
         WHERE b.id = ?
         """,(bouquet_id,))
 

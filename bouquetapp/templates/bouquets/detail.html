@@ -9,12 +9,14 @@
         <h1>{{ bouquet.name }}</h1>
         <h3><em>{{ bouquet.occasion }}</em></h3>
 
-        {% if bouquet.flowersWithQuantity is not None %}
+        {% if bouquet.flowersWithQuantity.1.name is not None %}
         <ul>
             {% for flower in bouquet.flowersWithQuantity %}
             <li>{{ flower.name }} (x{{ flower.quantity }})</li>
             {% endfor %}
         </ul>
+        {% else %}
+        <div>No flowers currently in this bouquet</div>
         {% endif %}
         
     </body>
