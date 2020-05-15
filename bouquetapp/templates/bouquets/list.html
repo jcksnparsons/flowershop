@@ -13,7 +13,7 @@
     <ul>
       {% for bouquet in all_bouquets %}
       <li>
-        {{ bouquet.name }}
+        <a href="{% url 'bouquetapp:bouquet' bouquet.id %}">{{ bouquet.name }}</a>
         <div><em>Perfect for {{ bouquet.occasion }}</em></div>
       </li>
       {% endfor %}
