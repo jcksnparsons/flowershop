@@ -1,0 +1,47 @@
+[
+  {
+    "model": "bouquetapp.Flower",
+    "pk": 1,
+    "fields": {
+      "name": "Daffodil",
+      "binomial_name": "Narcissus poeticus",
+      "longevity_in_days": 2
+    }
+  },
+  {
+    "model": "bouquetapp.Flower",
+    "pk": 2,
+    "fields": {
+      "name": "Iris",
+      "binomial_name": "Iris sibirica",
+      "longevity_in_days": 3
+    }
+  },
+  {
+    "model": "bouquetapp.Flower",
+    "pk": 3,
+    "fields": {
+      "name": "Dahlia",
+      "binomial_name": "Dahlia pinnata",
+      "longevity_in_days": 3
+    }
+  },
+  {
+    "model": "bouquetapp.Flower",
+    "pk": 4,
+    "fields": {
+      "name": "Gardenia",
+      "binomial_name": "Gardenia jasminoides",
+      "longevity_in_days": 4
+    }
+  },
+  {
+    "model": "bouquetapp.Flower",
+    "pk": 5,
+    "fields": {
+      "name": "Lily",
+      "binomial_name": "Lilium candidum",
+      "longevity_in_days": 5
+    }
+  }
+]

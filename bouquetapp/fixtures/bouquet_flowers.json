@@ -1,0 +1,65 @@
+[
+  {
+    "model": "bouquetapp.BouquetFlower",
+    "pk": 1,
+    "fields": {
+      "flower_id": 1,
+      "bouquet_id": 1,
+      "quantity": 2
+    }
+  },
+  {
+    "model": "bouquetapp.BouquetFlower",
+    "pk": 2,
+    "fields": {
+      "flower_id": 1,
+      "bouquet_id": 2,
+      "quantity": 2
+    }
+  },
+  {
+    "model": "bouquetapp.BouquetFlower",
+    "pk": 3,
+    "fields": {
+      "flower_id": 1,
+      "bouquet_id": 3,
+      "quantity": 1
+    }
+  },
+  {
+    "model": "bouquetapp.BouquetFlower",
+    "pk": 4,
+    "fields": {
+      "flower_id": 2,
+      "bouquet_id": 1,
+      "quantity": 10
+    }
+  },
+  {
+    "model": "bouquetapp.BouquetFlower",
+    "pk": 5,
+    "fields": {
+      "flower_id": 2,
+      "bouquet_id": 3,
+      "quantity": 6
+    }
+  },
+  {
+    "model": "bouquetapp.BouquetFlower",
+    "pk": 6,
+    "fields": {
+      "flower_id": 3,
+      "bouquet_id": 3,
+      "quantity": 4
+    }
+  },
+  {
+    "model": "bouquetapp.BouquetFlower",
+    "pk": 7,
+    "fields": {
+      "flower_id": 2,
+      "bouquet_id": 2,
+      "quantity": 15
+    }
+  }
+]

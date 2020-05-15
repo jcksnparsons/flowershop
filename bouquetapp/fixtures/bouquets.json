@@ -1,0 +1,26 @@
+[
+  {
+    "model": "bouquetapp.Bouquet",
+    "pk": 1,
+    "fields": {
+      "name": "A Mother's Love",
+      "occasion": "Mother's Day"
+    }
+  },
+  {
+    "model": "bouquetapp.Bouquet",
+    "pk": 2,
+    "fields": {
+      "name": "For a Hero",
+      "occasion": "Father's Day"
+    }
+  },
+  {
+    "model": "bouquetapp.Bouquet",
+    "pk": 3,
+    "fields": {
+      "name": "Your Special Day",
+      "occasion": "Birthday"
+    }
+  }
+]
