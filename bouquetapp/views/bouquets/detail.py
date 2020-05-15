@@ -65,3 +65,20 @@ def bouquet_details(request, bouquet_id):
         }
 
         return render(request, template, context)
+
+    elif request.method == 'POST':
+        form_data = request.POST
+
+        if (
+            "actual_method" in form_data and form_data["actual_method"] == "DELETE"
+        ):
+            with sqlite3.connect(Connection.db_path) as conn:
+                db_cursor = conn.cursor()
+
+                db_cursor.execute("""
+                DELETE FROM bouquetapp_bouquetflower
+                WHERE bouquet_id = ?
+                AND flower_id = ?
+                """, (bouquet_id, form_data["flower_id"],))
+
+            return redirect(reverse('bouquetapp:bouquet'))
